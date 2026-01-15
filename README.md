@@ -1,4 +1,4 @@
-## Setup for Team Members
+## Setup for Team
 
 1. **Install prerequisites:**
    - Docker Desktop
