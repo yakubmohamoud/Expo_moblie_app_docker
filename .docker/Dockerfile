@@ -32,7 +32,5 @@ EXPOSE 8081 19000 19001 19002
 
 ##COMMAND  that runs a container
 
-CMD ["npx","expo","start","--lan","--clear"]
-## npx runs npm packages without installing them globally
-## "expo start" starts the expo development server
-## --lan uses local network connection so you can connect from your phone on same WiFi
+CMD ["npx", "expo", "start", "--clear", "--lan"]
+## Start Expo with clear cache in LAN mode

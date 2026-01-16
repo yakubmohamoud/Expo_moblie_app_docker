@@ -1,6 +1,6 @@
 {
   "expo": {
-    "platforms": ["ios", "android"],
+    "platforms": ["ios", "android", "web"],
     "name": "moblie",
     "slug": "moblie",
     "version": "1.0.0",
