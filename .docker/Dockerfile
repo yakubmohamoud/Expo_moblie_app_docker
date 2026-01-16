@@ -18,7 +18,7 @@ RUN npm install -g @expo/ngrok@latest
 COPY moblie/package*.json ./
 
 ## npm install all dep clean install FAST
-RUN npm ci
+RUN npm install --legacy-peer-deps
 
 ## COPY files from /moblie to /app
 COPY moblie/ ./
@@ -32,7 +32,7 @@ EXPOSE 8081 19000 19001 19002
 
 ##COMMAND  that runs a container
 
-CMD ["npx","expo","start","--tunnel","--clear"]
+CMD ["npx","expo","start","--lan","--clear"]
 ## npx runs npm packages without installing them globally
 ## "expo start" starts the expo development server
-## --tunnel uses the tunnel connection so you can connect from your phone
+## --lan uses local network connection so you can connect from your phone on same WiFi
